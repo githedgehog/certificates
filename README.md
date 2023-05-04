@@ -18,7 +18,7 @@ These are all certificates which are used for our for trusted UEFI Secure Boot c
 - `sb-shim-test-1.der` - This is the `Hedgehog Secure Boot TEST CA` authority which is signing our GRUB bootloader development builds as well as the development ONIE and SONiC Linux kernels. Its certificate is embedded in our shim development builds which gets signed the the authority in `sb-microsoft-test-1.der`.
 
 - `sb-grub-pgp-prod-1.der` - This is the `Hedgehog GRUB Signer CA` authority which is actually a PGP key. It is used to sign all GRUB configuration files as well as everything that GRUB is loading. Its key is embedded in the GRUB binaries. This is technically not part of UEFI Secure Boot but an enhancement for Secure Boot disallowing unintended GRUB scripts from running. The concept is inherited from ONIE.
-- `sb-grub-pgp-test-1.der` - This is the `
+- `sb-grub-pgp-test-1.der` - This is the `Hedgehog GRUB Signer TEST CA` authority which is the equivalent for development builds.
 
 ## Kernel Modules
 
